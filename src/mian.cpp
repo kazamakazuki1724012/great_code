@@ -1,16 +1,19 @@
-char mojiretsu[1000];
-int mojisuu = 0;
-#include <stdio.h>
-#include <stdlib.h>
-#pragma warning(disable : 4996)
-#ifdef this_is_a_great_codo
-問題：1から順番に数字を発言するのだけれども、その数字が3で割り切れれはFizzと発言して、5ならBuzz、１５でならFizzBuzzと発言する
-#endif
-    int
-    main()
+#include <iostream>
+
+using namespace std;
+
+int main()
 {
-  while (mojisuu++ < 1000)
-    sprintf(mojiretsu, "%d", mojisuu),
-    printf("%s, ", mojisuu % 15 ? mojisuu % 3 ? mojisuu % 5 ? mojiretsu : "Buzz" : "Fizz" : "FizzBuzz");
-  system("PAUSE");
+  for (int i = 0; i <= 1000; i++)
+  {
+    if ((i % 15) == 0)
+      cout << "FizzBuzz" << endl;
+    else if ((i % 3) == 0)
+      cout << "Fizz" << endl;
+    else if ((i % 5) == 0)
+      cout << "Buzz" << endl;
+    else
+      cout << i << endl;
+  }
+  return 0;
 }
