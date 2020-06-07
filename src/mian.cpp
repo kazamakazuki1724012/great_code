@@ -3,16 +3,16 @@
 using namespace std;
 int main()
 {
-  for (int i = 1; i <= 100; i++)
+  for (int i = 1; i <= 1000; i++)
   {
     if ((i % 15) == 0)
-      cout << "FizzBuzz,\n";
+      cout << "FizzBuzz,\b";
     else if ((i % 3) == 0)
-      cout << "Fizz,\n";
+      cout << "Fizz,\b";
     else if ((i % 5) == 0)
-      cout << "Buzz,\n";
+      cout << "Buzz,\b";
     else
-      cout << i << ",\n";
+      cout << i << ",\b";
   }
   return 0;
 }
